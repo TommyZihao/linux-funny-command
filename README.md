@@ -3,6 +3,6 @@
 ```
 git clone https://github.com/TommyZihao/linux-funny-command.git
 cd linux-funny-command
-sudo chmod 777 1.sh 2.sh
+sudo chmod 777 1.sh
 ./1.sh
 ```
