@@ -1,7 +1,4 @@
 #!/bin/bash
-cd
-sudo mv /etc/apt/sources.list /etc/apt/sources2.list 
-sudo mv /linux-funny-command/2.sh /etc/apt/sources.list
 sudo apt install lolcat -y
 echo -e '马上开始安装40个有趣的Linux命令行彩蛋和游戏\n这个脚本文件是同济大学子豪兄在2018年12月4日写的'| lolcat
 sleep 2
