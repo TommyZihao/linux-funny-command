@@ -8,13 +8,6 @@ echo '开始安装1、黑客帝国字节数据流——假装自己是黑客高�
 sudo apt-get install cmatrix -y
 echo '安装完成'| lolcat
 sleep 2
-echo '开始安装2、高大上仪表盘blessed-contrib——假装自己指点江山，纵横捭阖'| lolcat
-sudo apt-get install npm -y
-sudo apt install nodejs-legacy -y
-git clone https://github.com/yaronn/blessed-contrib.git
-cd blessed-contrib
-npm install
-echo '安装完成'| lolcat
 echo '开始安装3、高大上仪表盘hollywood——假装自己日理万机，宵衣旰食'| lolcat
 sudo apt install hollywood -y
 echo '安装完成'| lolcat
@@ -185,13 +178,25 @@ echo '安装完成' | lolcat
 echo '开始安装40、打印圆周率后小数点若干位' | lolcat
 sudo apt-get install pi -y
 echo '安装完成' | lolcat
+echo '开始安装2、高大上仪表盘blessed-contrib——假装自己指点江山，纵横捭阖\n可能需要较长时间（大概10分钟）'| lolcat
+sleep 2
+sudo apt-get install npm -y
+sudo apt install nodejs-legacy -y
+git clone https://github.com/yaronn/blessed-contrib.git
+cd blessed-contrib
+npm install
+echo '安装完成'| lolcat
+echo '圆周率小数点之后50位'| lolcat
 pi 50
 sleep 1
+echo '圆周率小数点之后100位'| lolcat
 pi 100 
 sleep 1
-pi 10000
+echo '圆周率小数点之后1000位'| lolcat
+pi 1000
 sleep 1
-pi 100000
+echo '圆周率小数点之后10000位'| lolcat
+pi 10000
 sleep 1
 toilet -f mono12 -F gay Completed!
 echo '所有安装都已完成，你可以直接执行这些彩蛋和游戏命令，其中可能些会安装失败，你可以手动安装或更换一个Linux主机重新尝试' | lolcat
@@ -199,4 +204,4 @@ echo '相关的博客文章见40个超有趣的Linux命令行彩蛋和游戏' | 
 echo '知乎专栏：人工智能小技巧' | lolcat
 echo '微信公众号：人工智能小技巧' | lolcat
 echo '同济大学开源软件协会' | lolcat
-echo '再见了您呐' | lolcat
+echo '回见了您呐' | lolcat
