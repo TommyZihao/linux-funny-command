@@ -1,11 +1,11 @@
 #!/bin/bash
-echo -e '马上开始安装40个有趣的Linux命令行彩蛋和游戏\n这个脚本文件是同济大学子豪兄在2018年12月4日写的'
-sleep 2
-echo '欢迎关注知乎专栏：人工智能小技巧'
-sleep 2
-echo '开始安装1、黑客帝国字节数据流——假装自己是黑客高手，无孔不入'
-sudo apt-get install cmatrix -y
 sudo apt install lolcat -y
+echo -e '马上开始安装40个有趣的Linux命令行彩蛋和游戏\n这个脚本文件是同济大学子豪兄在2018年12月4日写的'| lolcat
+sleep 2
+echo '欢迎关注知乎专栏：人工智能小技巧'| lolcat
+sleep 2
+echo '开始安装1、黑客帝国字节数据流——假装自己是黑客高手，无孔不入'| lolcat
+sudo apt-get install cmatrix -y
 echo '安装完成'| lolcat
 sleep 2
 echo '开始安装2、高大上仪表盘blessed-contrib——假装自己指点江山，纵横捭阖'| lolcat
@@ -49,6 +49,8 @@ echo '开始安装10、艺术字生成器figlet'| lolcat
 sudo apt-get install figlet -y
 echo '安装完成'| lolcat
 figlet Tongji University
+sleep 2
+toilet -f mono12 -F gay Tongji University
 sleep 2
 echo '开始安装11、字符串视频——回归计算机的上古时代'| lolcat
 sudo apt-get install bb -y
@@ -109,6 +111,7 @@ echo '安装完成' | lolcat
 echo '开始安装20、linux各发行版logo图片及系统信息' | lolcat
 sudo apt install linuxlogo -y
 linux_logo
+sleep 2
 linux_logo -f -L list
 sudo apt-get install neofetch -y
 echo '安装完成' | lolcat
@@ -121,7 +124,7 @@ echo '安装完成' | lolcat
 echo '开始安装26、让命令行说话' | lolcat
 sudo apt install espeak -y
 echo '安装完成' | lolcat
-echo '开始安装27、随机产生人名与地址 | lolcat
+echo '开始安装27、随机产生人名与地址' | lolcat
 sudo apt-get install rig -y
 echo '安装完成' | lolcat
 rig
@@ -196,3 +199,4 @@ echo '相关的博客文章见40个超有趣的Linux命令行彩蛋和游戏' | 
 echo '知乎专栏：人工智能小技巧' | lolcat
 echo '微信公众号：人工智能小技巧' | lolcat
 echo '同济大学开源软件协会' | lolcat
+echo '再见了您呐' | lolcat
