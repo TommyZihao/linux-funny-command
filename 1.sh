@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install lolcat -y
+sudo apt-get install lolcat -y
 echo -e '马上开始安装40个有趣的Linux命令行彩蛋和游戏\n这个脚本文件是同济大学子豪兄在2018年12月4日写的'| lolcat
 sleep 2
 echo '欢迎关注知乎专栏：人工智能小技巧'| lolcat
@@ -137,7 +137,6 @@ aptitude moo -vvvvv
 sleep 1
 aptitude moo -vvvvvv
 sleep 1
-
 echo '安装完成' | lolcat
 echo '开始安装29、命令行游戏bastet：俄罗斯方块' | lolcat
 sudo apt install bastet -y
@@ -178,14 +177,6 @@ echo '安装完成' | lolcat
 echo '开始安装40、打印圆周率后小数点若干位' | lolcat
 sudo apt-get install pi -y
 echo '安装完成' | lolcat
-echo '开始安装2、高大上仪表盘blessed-contrib——假装自己指点江山，纵横捭阖\n可能需要较长时间（大概10分钟）'| lolcat
-sleep 2
-sudo apt-get install npm -y
-sudo apt install nodejs-legacy -y
-git clone https://github.com/yaronn/blessed-contrib.git
-cd blessed-contrib
-npm install
-echo '安装完成'| lolcat
 echo '圆周率小数点之后50位'| lolcat
 pi 50
 sleep 1
@@ -198,7 +189,17 @@ sleep 1
 echo '圆周率小数点之后10000位'| lolcat
 pi 10000
 sleep 1
+echo '最后一个安装！开始安装2、高大上仪表盘blessed-contrib——假装自己指点江山，纵横捭阖\n可能需要较长时间（大概10分钟）'| lolcat
+sleep 2
+sudo apt-get install npm -y
+sudo apt install nodejs-legacy -y
+git clone https://github.com/yaronn/blessed-contrib.git
+cd blessed-contrib
+npm install
+echo '安装完成'| lolcat
+echo '在树莓派上可能会安装失败，如果出现很多红色的ERROR，建议在ubuntu系统上手动安装' | lolcat
 toilet -f mono12 -F gay Completed!
+cd
 echo '所有安装都已完成，你可以直接执行这些彩蛋和游戏命令，其中可能些会安装失败，你可以手动安装或更换一个Linux主机重新尝试' | lolcat
 echo '相关的博客文章见40个超有趣的Linux命令行彩蛋和游戏' | lolcat
 echo '知乎专栏：人工智能小技巧' | lolcat
