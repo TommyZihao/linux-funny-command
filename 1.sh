@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install lolcat -y &
+sudo apt install lolcat -y
 echo -e '马上开始安装40个有趣的Linux命令行彩蛋和游戏\n这个脚本文件是同济大学子豪兄在2018年12月4日写的'| lolcat
 sleep 2
 echo '欢迎关注知乎专栏：人工智能小技巧'| lolcat
